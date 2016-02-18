@@ -54,7 +54,6 @@
             android:ems="10"
             android:id="@+id/editText"
             android:text="00:00" />
+
     </TableRow>
-</RelativeLayout>
-    
 </RelativeLayout>
