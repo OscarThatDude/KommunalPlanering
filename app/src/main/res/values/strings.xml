@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">KommunalPlanering</string>
+    <string name="sok_har_text">Sök här</string>
+    <string name="sok_reseplanerare">Sök</string>
 </resources>
