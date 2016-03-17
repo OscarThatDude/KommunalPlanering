@@ -1,59 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content" >
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:isScrollContainer="true"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    >
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Jag vill åka"
-        android:id="@+id/textView"
-        android:layout_marginTop="133dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="false"
-        android:autoText="false"
-        android:textIsSelectable="false" />
-
-    <TextView
+        android:text="@string/sok_har_text"
+        android:layout_weight="1" />
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Jag vill vara framme"
-        android:id="@+id/textView3"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:id="@+id/textView4"
-        android:layout_below="@+id/textView3"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="40dp" />
-
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView"
-        android:layout_marginBottom="120dp">
-
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"></TableRow>
+        android:orientation="vertical"
+        >
 
         <EditText
-            android:layout_width="72dp"
-            android:layout_height="wrap_content"
-            android:inputType="time"
-            android:ems="10"
-            android:id="@+id/editText"
-            android:text="00:00" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:layout_weight="1"
+        android:id="@+id/input_1"
+        />
 
-    </TableRow>
-</RelativeLayout>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:editable="true"
+            android:shadowColor="@color/colorPrimaryDark"
+            android:layout_weight="1"
+            android:id="@+id/input_2"
+
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sok_reseplanerare"
+        android:onClick="kontakta_databas"
+        />
+
+    </LinearLayout>
