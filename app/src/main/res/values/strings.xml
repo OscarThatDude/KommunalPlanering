@@ -2,4 +2,6 @@
     <string name="app_name">KommunalPlanering</string>
     <string name="sok_har_text">Sök här</string>
     <string name="sok_reseplanerare">Sök</string>
+    <string name="title_activity_test">test</string>
+    <string name="title_activity_help">Help</string>
 </resources>
